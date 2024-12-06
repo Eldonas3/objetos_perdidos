@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/admin_nav_graph"
     app:startDestination="@id/fragment_vista_principal_admin">
 
-    <!-- Fragmento: Vista Principal del Administrador -->
     <fragment
         android:id="@+id/fragment_vista_principal_admin"
         android:name="com.example.objetos_perdidos.AdministradorVistaPrincipal"
@@ -16,7 +14,6 @@
         android:name="com.example.objetos_perdidos.AdministradorVerObjeto"
         android:label="Ver Objeto" />
 
-    <!-- Fragmento: Reportar Objeto -->
     <fragment
         android:id="@+id/fragment_reportar_objeto_admin"
         android:name="com.example.objetos_perdidos.AdministradorReportarObjeto"
@@ -28,7 +25,6 @@
         android:name="com.example.objetos_perdidos.AdministradorEliminarObjeto"
         android:label="Eliminar Objeto" />
 
-    <!-- Fragmento: Búsqueda -->
     <fragment
         android:id="@+id/fragment_busqueda_admin"
         android:name="com.example.objetos_perdidos.AdministradorBusqueda"

@@ -1,5 +1,6 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_nav_graph"
     app:startDestination="@id/fragment_usuario_vista_principal">
 
     <!-- Fragmento: Vista Principal -->

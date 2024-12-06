@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Imagen del objeto -->
+    <ImageView
+        android:id="@+id/iv_objeto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/tv_descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Descripción del objeto"
+        android:textSize="14sp"
+        android:textColor="#2E3332"
+        android:padding="4dp" />
+
+    <!-- Botón Detalles -->
+    <ImageView
+        android:id="@+id/iv_detalles"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/eye_solid" />
+</LinearLayout>

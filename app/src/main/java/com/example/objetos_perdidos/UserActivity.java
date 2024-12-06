@@ -17,4 +17,5 @@ public class UserActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.user_nav_host_fragment);
         NavigationUI.setupWithNavController(bottomNav, navController);
     }
+
 }

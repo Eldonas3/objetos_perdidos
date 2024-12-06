@@ -1,0 +1,22 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/fragment_usuario_vista_principal">
+
+    <!-- Fragmento: Vista Principal -->
+    <fragment
+        android:id="@+id/fragment_usuario_vista_principal"
+        android:name="com.example.objetos_perdidos.UsuarioVistaPrincipal"
+        android:label="Inicio" />
+
+    <!-- Fragmento: Ver Objeto -->
+    <fragment
+        android:id="@+id/fragment_usuario_ver_objeto"
+        android:name="com.example.objetos_perdidos.UsuarioVerObjeto"
+        android:label="Ver Objeto" />
+
+    <!-- Fragmento: Búsqueda -->
+    <fragment
+        android:id="@+id/fragment_usuario_busqueda"
+        android:name="com.example.objetos_perdidos.UsuarioBusqueda"
+        android:label="Búsqueda" />
+</navigation>

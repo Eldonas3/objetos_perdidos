@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_busqueda_admin"
+        android:icon="@drawable/magnifying_glass_solid"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/fragment_vista_principal_admin"
+        android:icon="@drawable/house_solid"
+        android:title="Ver Objeto" />
+
+    <item
+        android:id="@+id/fragment_reportar_objeto_admin"
+        android:icon="@drawable/volume_high_solid"
+        android:title="Ver Objeto" />
+
+</menu>

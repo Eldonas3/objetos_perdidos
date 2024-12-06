@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/fragment_vista_principal_admin">
+
+    <!-- Fragmento: Vista Principal del Administrador -->
+    <fragment
+        android:id="@+id/fragment_vista_principal_admin"
+        android:name="com.example.objetos_perdidos.AdministradorVistaPrincipal"
+        android:label="Inicio" />
+
+    <!-- Fragmento: Ver Objeto -->
+    <fragment
+        android:id="@+id/fragment_ver_objeto_admin"
+        android:name="com.example.objetos_perdidos.AdministradorVerObjeto"
+        android:label="Ver Objeto" />
+
+    <!-- Fragmento: Reportar Objeto -->
+    <fragment
+        android:id="@+id/fragment_reportar_objeto_admin"
+        android:name="com.example.objetos_perdidos.AdministradorReportarObjeto"
+        android:label="Reportar Objeto" />
+
+    <!-- Fragmento: Eliminar Objeto -->
+    <fragment
+        android:id="@+id/fragment_eliminar_objeto_admin"
+        android:name="com.example.objetos_perdidos.AdministradorEliminarObjeto"
+        android:label="Eliminar Objeto" />
+
+    <!-- Fragmento: Búsqueda -->
+    <fragment
+        android:id="@+id/fragment_busqueda_admin"
+        android:name="com.example.objetos_perdidos.AdministradorBusqueda"
+        android:label="Búsqueda" />
+
+    <!-- Fragmento: Actualizar Objeto -->
+    <fragment
+        android:id="@+id/fragment_actualizar_objeto_admin"
+        android:name="com.example.objetos_perdidos.AdministradorActualizarObjeto"
+        android:label="Actualizar Objeto" />
+</navigation>

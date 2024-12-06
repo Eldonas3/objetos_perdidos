@@ -1,0 +1,25 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <!-- Contenedor para Navigation Host -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/admin_nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/admin_nav_graph"
+        app:defaultNavHost="true" />
+
+    <!-- Barra de Navegación Inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/verde_claro"
+        app:itemIconTint="@color/cascaron"
+        app:menu="@menu/menu_administrador" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

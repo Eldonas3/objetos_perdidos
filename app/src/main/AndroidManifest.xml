@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,27 +15,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Objetos_Perdidos"
         tools:targetApi="31">
+
+        <!-- LoginActivity como actividad principal -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Objetos_Perdidos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- AdminActivity -->
         <activity
             android:name=".AdminActivity"
             android:exported="false"
             android:theme="@style/Theme.Objetos_Perdidos" />
+
+        <!-- UserActivity -->
         <activity
             android:name=".UserActivity"
             android:exported="false"
             android:theme="@style/Theme.Objetos_Perdidos" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Objetos_Perdidos" />
+
+        <!-- MainActivity (ya no es principal) -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"
+            android:theme="@style/Theme.Objetos_Perdidos" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
